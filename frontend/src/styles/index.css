@@ -1,0 +1,9 @@
+/* Remove Vite/CRA default constraints that constrain width */
+:root { color-scheme: dark; }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* This file should contain ONLY this — all real styles are in Global.css */

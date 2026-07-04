@@ -1,0 +1,76 @@
+.events-section { background: var(--dark-2); }
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.event-card { background: var(--dark-3); overflow: hidden; transition: transform var(--transition); }
+.event-card:hover { transform: translateY(-6px); }
+.event-card img { width: 100%; height: 220px; object-fit: cover; transition: transform 0.5s ease; }
+.event-card:hover img { transform: scale(1.05); }
+.event-body { padding: 1.8rem; }
+
+/* Small circular category photo replaces emoji */
+.event-category-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+  border: 2px solid rgba(201,168,76,0.4);
+}
+.event-category-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--white); margin-bottom: 0.5rem; }
+.event-desc { font-size: 0.72rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1.2rem; }
+.event-details {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.6rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  flex-wrap: wrap;
+}
+.event-details span {
+  border: 1px solid rgba(201,168,76,0.25);
+  padding: 0.25rem 0.65rem;
+}
+
+/* TESTIMONIALS */
+.testimonials-section { background: var(--dark); }
+.testimonials-wrap { max-width: 1200px; margin: 0 auto; }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.testimonial-card {
+  background: var(--dark-3);
+  padding: 2.5rem;
+  border-top: 2px solid var(--gold);
+  position: relative;
+}
+.testimonial-quote {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.3;
+  line-height: 0.5;
+  margin-bottom: 1rem;
+}
+.testimonial-text {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 1.8rem;
+}
+.testimonial-stars { color: var(--gold); font-size: 0.8rem; margin-bottom: 1.2rem; letter-spacing: 3px; }
+.author-name { font-size: 0.75rem; font-weight: 600; color: var(--white); }
