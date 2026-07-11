@@ -1,4 +1,4 @@
-import './styles/Global.css';
+import './App.css'
 
 import { useEffect, useState } from 'react';
 
